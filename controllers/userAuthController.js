@@ -8,6 +8,7 @@ const generateToken = ({userId, email, fullName})=>{
     })
 }
 
+
 //SignUp
 //get access to the req.body
 //check if there is an existing user
