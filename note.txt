@@ -1,0 +1,63 @@
+i install npm init -y
+then i install npm i express
+i then install npm i mongoose
+then i went to my package.json to write  "start" : "node server.js" under my "test"
+
+next is to get my mongo url from my mongo site
+in my mongo site i click on create new project
+then i name my project name (project list with cart) then click on next
+i then create my project
+i then create my cluster
+
+click on free then deploy in
+username and pasword created 
+i copied it and paste it obn my backend project
+
+in the process of creating my clusterpasssword
+username and url was given
+
+i had to copy it someowhere to save it
+then i edit the url given to input the intial password that was given to me 
+
+akoladeolamilekan7_db_user
+3tFp0vv8H1pZlFZk
+
+mongodb+srv://akoladeolamilekan7_db_user:3tFp0vv8H1pZlFZk@cluster0.br5tail.mongodb.net/?appName=Cluster0
+
+this url has to be hidden so that hacker wont hacker
+to hid it 
+i create .env then copy my port and mongo url
+
+then i install npm i dotenv it will help me use my server since i already hid it
+
+to use it in the server 
+const dotenv = require("dotenv") it will be at the top of the server.js file
+after that i will need to configure it by using
+dotenv.config()
+
+to now use it i will input process.env
+and also 
+const port = process.env.PORT
+
+THEN I WILL install another packager npm i cors
+trhen i will require it at my server.js file
+const cors = require("cors")
+
+i also install npm i jsonwebtoken
+then i reuire it at my userAuthcontoller.js
+const jwt = require("jsonwebtoken")
+
+then i need a function to help me create token
+funtion  is 
+const generateToken = ()=>{
+
+}
+
+to hash a password 
+i will install npm i bcryptjs
+
+i install npm i nodemon to hel[p me refresh server authomaticvally
+
+i input the text script in my package.json under start
+"dev" : "nodemon server.js"]
+then i will run npm run dev to start my server with nodemon
